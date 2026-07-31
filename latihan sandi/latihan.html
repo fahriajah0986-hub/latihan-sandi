@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Latihan Sandi Pramuka</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/latihan.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card latihan-card">
+
+            <!-- Header -->
+            <div class="top">
+
+                <div class="info">
+
+                    <h2>🏕️ Latihan Sandi Pramuka</h2>
+
+                    <p id="namaPeserta">
+                        Peserta :
+                    </p>
+
+                </div>
+
+                <div class="timer" id="timer">
+                    00:00
+                </div>
+
+            </div>
+
+            <!-- Progress -->
+            <div class="progress">
+
+                <span id="nomorSoal">
+                    Soal 1
+                </span>
+
+                <span id="totalSoal">
+                    / 0
+                </span>
+
+            </div>
+
+            <!-- Soal -->
+            <div class="soal-box">
+
+                <div id="soal">
+                    Soal akan muncul di sini
+                </div>
+
+            </div>
+
+            <!-- Jawaban -->
+            <div class="jawaban">
+
+                <label for="jawaban">
+                    Jawaban
+                </label>
+
+                <input
+                    type="text"
+                    id="jawaban"
+                    autocomplete="off"
+                    placeholder="Masukkan jawaban">
+
+            </div>
+
+            <!-- Tombol -->
+            <button id="selanjutnya">
+                Selanjutnya
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/data/kata.js"></script>
+    <script src="assets/data/kotak3.js"></script>
+    <script src="assets/data/gudep-sedia.js"></script>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/latihan.js"></script>
+    <script src="assets/js/timer.js"></script>
+
+</body>
+
+</html>

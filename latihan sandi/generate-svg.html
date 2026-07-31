@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Generate SVG</title>
+</head>
+<body>
+
+<h2>Membuat File SVG...</h2>
+
+<script>
+
+const huruf = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
+huruf.forEach(h => {
+
+const svg =
+`<svg xmlns="http://www.w3.org/2000/svg"
+width="64"
+height="64"
+viewBox="0 0 64 64">
+
+<rect
+x="4"
+y="4"
+width="56"
+height="56"
+fill="white"
+stroke="black"
+stroke-width="3"/>
+
+<text
+x="32"
+y="42"
+font-size="28"
+text-anchor="middle"
+font-family="Arial"
+font-weight="bold">${h}</text>
+
+</svg>`;
+
+const blob = new Blob([svg], {type:"image/svg+xml"});
+
+const a = document.createElement("a");
+
+a.href = URL.createObjectURL(blob);
+
+a.download = h + ".svg";
+
+a.click();
+
+});
+
+document.body.innerHTML += "<h3>Selesai</h3>";
+
+</script>
+
+</body>
+</html>
