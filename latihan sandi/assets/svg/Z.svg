@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="64"
+     height="64"
+     viewBox="0 0 64 64">
+
+    <!-- Garis atas -->
+    <line
+        x1="12"
+        y1="14"
+        x2="52"
+        y2="14"
+        stroke="black"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+    <!-- Garis diagonal -->
+    <line
+        x1="12"
+        y1="50"
+        x2="52"
+        y2="14"
+        stroke="black"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+    <!-- Titik -->
+    <circle
+        cx="24"
+        cy="26"
+        r="4"
+        fill="black"/>
+
+</svg>

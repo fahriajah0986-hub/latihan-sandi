@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="64"
+     height="64"
+     viewBox="0 0 64 64">
+
+    <!-- Garis diagonal atas -->
+    <line x1="16" y1="16"
+          x2="50" y2="32"
+          stroke="black"
+          stroke-width="4"
+          stroke-linecap="round"/>
+
+    <!-- Garis diagonal bawah -->
+    <line x1="16" y1="48"
+          x2="50" y2="32"
+          stroke="black"
+          stroke-width="4"
+          stroke-linecap="round"/>
+
+</svg>
