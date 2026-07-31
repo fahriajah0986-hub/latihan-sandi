@@ -1,0 +1,147 @@
+.latihan-card{
+
+    max-width:800px;
+
+}
+
+.top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.top h2{
+
+    color:#F97316;
+
+}
+
+.timer{
+
+    background:#F97316;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.progress{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+.soal-box{
+
+    background:#FFF7ED;
+
+    border:2px dashed #F97316;
+
+    border-radius:12px;
+
+    min-height:180px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+.jawaban{
+
+    margin-bottom:25px;
+
+}
+
+.jawaban label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.jawaban input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #FED7AA;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+}
+
+.jawaban input:focus{
+
+    border-color:#F97316;
+
+    outline:none;
+
+}
+
+@media(max-width:700px){
+
+    .top{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+
+    }
+
+    .soal-box{
+
+        font-size:24px;
+
+    }
+
+}
+
+.huruf-kotak3{
+    width:50px;
+    height:50px;
+    margin:4px;
+}
+
+#soal{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px;
+}

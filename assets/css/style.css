@@ -1,0 +1,163 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFF7ED;
+    color:#1F2937;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+    width:100%;
+    max-width:500px;
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.card h1{
+    text-align:center;
+    color:#F97316;
+    margin-bottom:10px;
+}
+
+.card p{
+    text-align:center;
+    color:#6B7280;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:2px solid #FED7AA;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.form-group input:focus{
+
+    outline:none;
+
+    border-color:#F97316;
+
+    box-shadow:0 0 8px rgba(249,115,22,.25);
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#F97316;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#EA580C;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:600px){
+
+    .card{
+
+        padding:25px;
+
+    }
+
+    .card h1{
+
+        font-size:26px;
+
+    }
+
+}

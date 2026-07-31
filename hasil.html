@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hasil Latihan</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hasil.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card hasil-card">
+
+            <h2>🏆 Hasil Latihan</h2>
+
+            <div class="ringkasan">
+
+                <p><strong>Nama Peserta :</strong> <span id="namaPeserta"></span></p>
+
+                <p><strong>Jawaban Benar :</strong> <span id="jumlahBenar"></span></p>
+
+                <p><strong>Jawaban Salah :</strong> <span id="jumlahSalah"></span></p>
+
+                <p><strong>Nilai :</strong> <span id="nilaiPeserta"></span></p>
+
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                   <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Soal Sandi</th>
+                            <th>Jawaban Peserta</th>
+                            <th>Jawaban Benar</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelHasil">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="aksi">
+
+                <button id="downloadExcel">
+                    📥 Download Excel
+                </button>
+
+                <button onclick="window.location.href='index.html'">
+                    🏠 Kembali
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        <script src="library/xlsx.full.min.js"></script>
+
+        <script src="assets/data/kotak3.js"></script>
+        <script src="assets/data/gudep-sedia.js"></script>
+
+        <script src="assets/js/excel.js"></script>
+        <script src="assets/js/hasil.js"></script>
+</body>
+
+</html>
