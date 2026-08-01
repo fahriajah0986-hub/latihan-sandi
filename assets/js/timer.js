@@ -3,7 +3,7 @@
 // ==============================
 
 let sisaWaktu =
-    (Number(localStorage.getItem("waktu")) || 3) * 60;
+    (Number(localStorage.getItem("waktu")) || 5) * 60;
 
 const timer = document.getElementById("timer");
 
@@ -19,9 +19,12 @@ function updateTimer() {
 
     if (sisaWaktu <= 0) {
 
+        clearInterval(intervalTimer);
+
         selesaiKarenaWaktu();
 
         return;
+
     }
 
     sisaWaktu--;
