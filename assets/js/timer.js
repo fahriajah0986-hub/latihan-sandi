@@ -17,15 +17,17 @@ function updateTimer() {
         ":" +
         String(detik).padStart(2, "0");
 
-    if (sisaWaktu <= 0) {
+   if (sisaWaktu <= 0) {
 
-        clearInterval(intervalTimer);
+    clearInterval(intervalTimer);
 
-        selesaiKarenaWaktu();
+    timer.textContent = "00:00";
 
-        return;
+    selesaiKarenaWaktu();
 
-    }
+    return;
+
+}
 
     sisaWaktu--;
 

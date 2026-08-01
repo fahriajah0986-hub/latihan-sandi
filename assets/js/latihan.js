@@ -261,3 +261,50 @@ jawabanInput.addEventListener("keydown", function (e) {
 // ==============================
 
 mulaiLatihan();
+
+// ==============================
+// WAKTU HABIS
+// ==============================
+
+function selesaiKarenaWaktu() {
+
+    // Jika soal yang sedang tampil belum dijawab,
+    // anggap salah
+    if (soalSekarang !== null) {
+
+        hasilLatihan.push({
+
+            nomor: nomor,
+
+            tipe: soalSekarang.tipe,
+
+            soal: soalSekarang.kata,
+
+            jawabanPeserta: "-",
+
+            jawabanBenar: soalSekarang.kata,
+
+            benar: false
+
+        });
+
+        salah++;
+
+    }
+
+    localStorage.setItem(
+        "hasilLatihan",
+        JSON.stringify(hasilLatihan)
+    );
+
+    localStorage.setItem("benar", benar);
+    localStorage.setItem("salah", salah);
+
+    localStorage.setItem(
+        "nilai",
+        Math.round((benar / jumlahSoal) * 100)
+    );
+
+    window.location.href = "hasil.html";
+
+}
